@@ -126,7 +126,7 @@ bool is_set(unsigned int number, int x) {
 
 ### Check if an integer is a power of 2
 
-A power of two is a number that has only a single bit in it (e.g. $32 = 0010~0000_2$), while the predecessor of that number has that digit not set and all the digits after it set ($31 = 0001~1111_2$).
+A power of two is a number that has only a single bit set in it (e.g. $32 = 0010~0000_2$), while the predecessor of that number has that digit not set and all the digits after it set ($31 = 0001~1111_2$).
 So the bitwise AND of a number with it's predecessor will always be 0, as they don't have any common digits set.
 You can easily check that this only happens for the the power of twos and for the number $0$ which already has no digit set.
 
